@@ -5,6 +5,7 @@ import styles from '../pages/styles.module.css';
 import Soundcloud from '../components/soundcloud';
 import SpotifyCompact from '../components/spotifyCompact';
 import VideoPlayer from '../components/videoPlayer';
+import AudioPlayer from '../components/audioPlayer';
 
 export default function FeaturePodcast(props) {
 
@@ -27,6 +28,9 @@ export default function FeaturePodcast(props) {
             } 
             {props.type === "video" &&
                 <VideoPlayer scsrc={props.src} />
+            } 
+            {props.type === "audio" &&
+                <AudioPlayer scsrc={props.src} />
             } 
             {defined(props.podcastUrl) && props.podcastUrl !== '' &&
                 <a href={props.podcastUrl}>{props.podcast}</a>
