@@ -1,14 +1,13 @@
 import React from "react";
 import ReactPlayer from "react-player";
 
-export default function audioPlayer ({ scsrc }){
+export default function AudioPlayer ({ scsrc }){
     return(
         <ReactPlayer
-        class="video-player"
-        controls="true"
+        playing
+        controls
+        className='react-player'
         url={scsrc}
-        width="100%"
-        height="80%"
         />
     );
 }
