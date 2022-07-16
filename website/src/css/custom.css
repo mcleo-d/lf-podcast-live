@@ -113,3 +113,8 @@ body{
   width: 100px;
   height: 100px;
 }
+
+.audio-player{
+  width: 400px !important;
+  height: 75px !important;
+}

@@ -6,7 +6,7 @@ export default function AudioPlayer ({ scsrc }){
         <ReactPlayer
         playing
         controls
-        className='react-player'
+        className='audio-player'
         url={scsrc}
         />
     );
