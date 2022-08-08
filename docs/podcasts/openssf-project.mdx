@@ -3,12 +3,18 @@ id: openssf-project
 title: A Life in Open Source
 ---
 
-import Spotify from "@site/src/components/spotify";
+import PodcastUrl from "@site/static/mp3/brian-behlendorf-final.mp3";
 import { podcasts } from "@site/src/components/podcasts";
+import AudioPlayer from "@site/src/components/audioPlayer";
+import Spotify from "@site/src/components/spotify";
 
 # A Life in Open Source, with Brian Behlendorf
 
 <Spotify scsrc={podcasts["brian"].src} />
+
+#### React Player with GitHub Hosted MP3
+
+<AudioPlayer scsrc={PodcastUrl} />
 
 [The Untold Stories of Open Source](https://untold-stories-of-open-source.captivate.fm/spotify)
 
